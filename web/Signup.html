@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/signupcss.css" rel="stylesheet" type="text/css"/>
+<script>
+        function validateForm() {
+            var checkbox = document.getElementById('checkbox');
+            if (!checkbox.checked) {
+                alert("Please agree to the Terms and Conditions.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+   
+ 
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+        <form action="signup" method="post">
+            <input type="text" placeholder="UserName" required name="uname">
+            <input type="email" placeholder="Email"  required name="email">
+            <input type="password" placeholder="Password" required name="pass">
+            <input type="password" placeholder="Re-Enter " required name="cpass">
+            <input type="submit" name="submit" value="Submit"> 
+        </form>
+        
+        
+        <div class="member">
+            Already a member?<a href="login.html">Login here</a>
+        </div>
+    </div>
+    
+</body>
+</html>
